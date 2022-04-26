@@ -1,2 +1,1 @@
-# chandan-shrivastava.github.io
-Personal Portfolio
+# Chandan Shrivastava (Developer Portfolio)
