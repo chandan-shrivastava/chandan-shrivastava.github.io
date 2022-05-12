@@ -73,7 +73,6 @@
           max-height: 19rem
      }
 </style>
-<meta content=32oSWHuVyNTe5fpVSYiYxFxgCtlcHC5zIBhGg7nPDRk name=google-site-verification>
 
 <body>
      <style>
@@ -96,8 +95,105 @@
           .social li a {
                font-size: 21px
           }
+
+          button,
+          button::after {
+               width: 200px;
+               height: 86px;
+               font-size: 36px;
+               font-family: 'Bebas Neue', cursive;
+               background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+               border: 0;
+               color: #fff;
+               letter-spacing: 3px;
+               line-height: 88px;
+               box-shadow: 6px 0px 0px #00E6F6;
+               outline: transparent;
+               position: relative;
+          }
+
+          button::after {
+               --slice-0: inset(50% 50% 50% 50%);
+               --slice-1: inset(80% -6px 0 0);
+               --slice-2: inset(50% -6px 30% 0);
+               --slice-3: inset(10% -6px 85% 0);
+               --slice-4: inset(40% -6px 43% 0);
+               --slice-5: inset(80% -6px 5% 0);
+
+               content: 'RESUME';
+               display: block;
+               position: absolute;
+               top: 0;
+               left: 0;
+               right: 0;
+               bottom: 0;
+               background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+               text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+               clip-path: var(--slice-0);
+          }
+
+          button:hover::after {
+               animation: 1s glitch;
+               animation-timing-function: steps(2, end);
+          }
+
+          @keyframes glitch {
+               0% {
+                    clip-path: var(--slice-1);
+                    transform: translate(-20px, -10px);
+               }
+
+               10% {
+                    clip-path: var(--slice-3);
+                    transform: translate(10px, 10px);
+               }
+
+               20% {
+                    clip-path: var(--slice-1);
+                    transform: translate(-10px, 10px);
+               }
+
+               30% {
+                    clip-path: var(--slice-3);
+                    transform: translate(0px, 5px);
+               }
+
+               40% {
+                    clip-path: var(--slice-2);
+                    transform: translate(-5px, 0px);
+               }
+
+               50% {
+                    clip-path: var(--slice-3);
+                    transform: translate(5px, 0px);
+               }
+
+               60% {
+                    clip-path: var(--slice-4);
+                    transform: translate(5px, 10px);
+               }
+
+               70% {
+                    clip-path: var(--slice-2);
+                    transform: translate(-10px, 10px);
+               }
+
+               80% {
+                    clip-path: var(--slice-5);
+                    transform: translate(20px, -10px);
+               }
+
+               90% {
+                    clip-path: var(--slice-1);
+                    transform: translate(-10px, 0px);
+               }
+
+               100% {
+                    clip-path: var(--slice-1);
+                    transform: translate(0);
+               }
+          }
      </style>
-     <script>window.onload = function () { var t; navigator.geolocation.getCurrentPosition(function (o) { t = o, $("#Lat").html(t.coords.latitude), $("#Lon").html(t.coords.longitude) }) }</script>
      <div class="home-two main-wrapper">
           <div class=container>
                <div class=menu-two id=navigation>
@@ -138,6 +234,7 @@
                                         <h3 id=typewriter></h3>
                                         <script>var isTag, text, str = "A Passionate Software <span style='color:#f7941d;'>Developer</span> ", i = 0; !function e() { if ((text = str.slice(0, ++i)) !== str) { var t = (document.getElementById("typewriter").innerHTML = text).slice(-1); if ("<" === t && (isTag = !0), ">" === t && (isTag = !1), isTag) return e(); setTimeout(e, 80) } }()</script>
                                         <br>
+                                        <a href="http://bit.ly/chandan-cv" target="_blank"><button>Resume</button></a>
                                    </div>
                               </div>
                          </div>
@@ -323,7 +420,7 @@
                                              alt="Image" class="img-responsive" style='padding: 2rem;'></div>
                                    <div class="exprience-info">
                                         <h3>Cleverlogik Technologies</h3>
-                                        <h5>Jan, 2022 - Present | Software Engineering Intern</h5>
+                                        <h5>Jan, 2022 - Apr, 2022 | Software Engineering Intern</h5>
                                         <ul>
                                              <li>1. Executed Query Engine for Postgres Database </li>
                                              <li>2. Developed Frontend for Cloud Security Posture Management </li>
@@ -339,11 +436,14 @@
                                              style='padding: 2rem;' alt=Image class=img-responsive></div>
                                    <div class=exprience-info>
                                         <h3>PiStarTech Pvt. Ltd.</h3>
-                                        <h5>Jan, 2022 - Present | Software Engineering Intern</h5>
-                                        <li>1. Developed Frontend and Backend of the Website </li>
-                                        <li>2. Developing Mobile Application for integrating with IoT device </li>
-                                        <li>3. Uploading and Fetching Data from Cloud (IoT Device -> Cloud -> App) </li>
-                                        <li>4. Technologies Used: HTML, CSS, Javascript, Flutter, Firebase</li>
+                                        <h5>Jan, 2022 - Apr, 2022 | Software Engineering Intern</h5>
+                                        <ul>
+                                             <li>1. Developed Frontend and Backend of the Website </li>
+                                             <li>2. Developing Mobile Application for integrating with IoT device </li>
+                                             <li>3. Uploading and Fetching Data from Cloud (IoT Device -> Cloud -> App)
+                                             </li>
+                                             <li>4. Technologies Used: HTML, CSS, Javascript, Flutter, Firebase</li>
+                                        </ul>
                                    </div>
                               </div>
                               <hr>
@@ -378,7 +478,7 @@
                     <div class=row>
                          <div class=col-sm-4>
                               <div class=section-title>
-                                   <h1>Portfolio</h1>
+                                   <h1>Projects</h1>
                               </div>
                          </div>
                          <div class=col-sm-8>
@@ -386,10 +486,13 @@
                                    <div class=row>
                                         <div class=col-sm-6>
                                              <div class=thumbnail>
-                                                  <a target="_blank" href=https://github.com/chandan-shrivastava/cshell target=_blank><img src=https://media.geeksforgeeks.org/wp-content/uploads/cli_example.png
+                                                  <a target="_blank" href=https://github.com/chandan-shrivastava/cshell
+                                                       target=_blank><img width="400px" height="400px"
+                                                            src=https://media.geeksforgeeks.org/wp-content/uploads/cli_example.png
                                                             alt=inventory class=img-responsive>
                                                        <div>
-                                                            <h4> &nbsp; C-Shell <a target="_blank" href=https://github.com/chandan-shrivastava/cshell
+                                                            <h4> &nbsp; C-Shell <a target="_blank"
+                                                                      href=https://github.com/chandan-shrivastava/cshell
                                                                       class="opsrc"><i aria-hidden=true
                                                                            class="fab fa-c"></i>
                                                                  </a></small>
@@ -400,10 +503,34 @@
                                         </div>
                                         <div class=col-sm-6>
                                              <div class=thumbnail>
-                                                  <a target="_blank" href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/CANTEEN-PORTAL target=_blank><img src=http://www.klmehtadcw.org/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-19-at-10.41.58-300x225.jpeg
+                                                  <a target="_blank"
+                                                       href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/CANTEEN-PORTAL
+                                                       target=_blank><img width="400px" height="400px"
+                                                            src=http://www.klmehtadcw.org/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-19-at-10.41.58-300x225.jpeg
                                                             alt=inventory class=img-responsive>
                                                        <div>
-                                                            <h4> &nbsp; Canteen Portal <a target="_blank" href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/CANTEEN-PORTAL
+                                                            <h4> &nbsp; Canteen Portal <a target="_blank"
+                                                                      href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/CANTEEN-PORTAL
+                                                                      class="opsrc"><i aria-hidden=true
+                                                                           class="fab fa-c"></i>
+                                                                 </a></small>
+                                                            </h4>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class=row>
+                                        <div class=col-sm-6>
+                                             <div class=thumbnail>
+                                                  <a target="_blank"
+                                                       href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/TWEAKED-XV6
+                                                       target=_blank><img width="400px" height="400px"
+                                                            src=https://d3mxt5v3yxgcsr.cloudfront.net/courses/1952/course_1952_image.png
+                                                            alt=inventory class=img-responsive>
+                                                       <div>
+                                                            <h4> &nbsp; Customised XV-6 <a target="_blank"
+                                                                      href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/TWEAKED-XV6
                                                                       class="opsrc"><i aria-hidden=true
                                                                            class="fab fa-c"></i>
                                                                  </a></small>
@@ -414,10 +541,34 @@
                                         </div>
                                         <div class=col-sm-6>
                                              <div class=thumbnail>
-                                                  <a target="_blank" href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/TWEAKED-XV6 target=_blank><img src=https://media.geeksforgeeks.org/wp-content/uploads/20200629075804/userC1.jpg
+                                                  <a target="_blank"
+                                                       href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/CLASH-OF-CLANS-CLONE
+                                                       target=_blank><img width="400px" height="400px"
+                                                            src=https://gamingonphone.com/wp-content/uploads/2021/03/91duOGX58CL-1.jpg
                                                             alt=inventory class=img-responsive>
                                                        <div>
-                                                            <h4> &nbsp; Customised XV-6 <a target="_blank" href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/TWEAKED-XV6
+                                                            <h4> &nbsp; Clash of Clans <a target="_blank"
+                                                                      href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/CLASH-OF-CLANS-CLONE
+                                                                      class="opsrc"><i aria-hidden=true
+                                                                           class="fab fa-c"></i>
+                                                                 </a></small>
+                                                            </h4>
+                                                       </div>
+                                                  </a>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class=row>
+                                        <div class=col-sm-6>
+                                             <div class=thumbnail>
+                                                  <a target="_blank"
+                                                       href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/TVRQC-BOT
+                                                       target=_blank><img width="400px" height="400px"
+                                                            src=https://cdn.searchenginejournal.com/wp-content/uploads/2020/06/47e5b89a-2b1c-4dcd-a9a8-5db0118157cb-5efbf892d137a-760x400.jpeg
+                                                            alt=inventory class=img-responsive>
+                                                       <div>
+                                                            <h4> &nbsp; TVRQC Quiz Bot <a target="_blank"
+                                                                      href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/TVRQC-BOT
                                                                       class="opsrc"><i aria-hidden=true
                                                                            class="fab fa-c"></i>
                                                                  </a></small>
@@ -428,10 +579,14 @@
                                         </div>
                                         <div class=col-sm-6>
                                              <div class=thumbnail>
-                                                  <a target="_blank" href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/CLASH-OF-CLANS-CLONE target=_blank><img src=https://gamingonphone.com/wp-content/uploads/2021/03/91duOGX58CL-1.jpg
+                                                  <a target="_blank"
+                                                       href=https://github.com/jeopardy1234/Hospital-Management
+                                                       target=_blank><img width="400px" height="400px"
+                                                            src=https://dataman.in/wp-content/uploads/2020/05/Hospital-Management-System-1024x576.jpg
                                                             alt=inventory class=img-responsive>
                                                        <div>
-                                                            <h4> &nbsp; Clash of Clans <a target="_blank" href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/CLASH-OF-CLANS-CLONE
+                                                            <h4> &nbsp; Hospital Management System <a target="_blank"
+                                                                      href=https://github.com/jeopardy1234/Hospital-Management
                                                                       class="opsrc"><i aria-hidden=true
                                                                            class="fab fa-c"></i>
                                                                  </a></small>
@@ -440,40 +595,18 @@
                                                   </a>
                                              </div>
                                         </div>
+                                   </div>
+                                   <div class=row>
                                         <div class=col-sm-6>
                                              <div class=thumbnail>
-                                                  <a target="_blank" href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/TVRQC-BOT target=_blank><img src=https://cdn.searchenginejournal.com/wp-content/uploads/2020/06/47e5b89a-2b1c-4dcd-a9a8-5db0118157cb-5efbf892d137a-760x400.jpeg
+                                                  <a target="_blank"
+                                                       href=https://github.com/chandan-shrivastava/Directory-Manager
+                                                       target=_blank><img width="400px" height="400px"
+                                                            src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Files11_directory_hierarchy.svg/220px-Files11_directory_hierarchy.svg.png
                                                             alt=inventory class=img-responsive>
                                                        <div>
-                                                            <h4> &nbsp; TVRQC Quiz Bot <a target="_blank" href=HTTPS://GITHUB.COM/CHANDAN-SHRIVASTAVA/TVRQC-BOT
-                                                                      class="opsrc"><i aria-hidden=true
-                                                                           class="fab fa-c"></i>
-                                                                 </a></small>
-                                                            </h4>
-                                                       </div>
-                                                  </a>
-                                             </div>
-                                        </div>
-                                        <div class=col-sm-6>
-                                             <div class=thumbnail>
-                                                  <a target="_blank" href=https://github.com/jeopardy1234/Hospital-Management target=_blank><img src=https://dataman.in/wp-content/uploads/2020/05/Hospital-Management-System-1024x576.jpg
-                                                            alt=inventory class=img-responsive>
-                                                       <div>
-                                                            <h4> &nbsp; Hospital Management System <a target="_blank" href=https://github.com/jeopardy1234/Hospital-Management
-                                                                      class="opsrc"><i aria-hidden=true
-                                                                           class="fab fa-c"></i>
-                                                                 </a></small>
-                                                            </h4>
-                                                       </div>
-                                                  </a>
-                                             </div>
-                                        </div>
-                                        <div class=col-sm-6>
-                                             <div class=thumbnail>
-                                                  <a target="_blank" href=https://github.com/chandan-shrivastava/Directory-Manager target=_blank><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Files11_directory_hierarchy.svg/220px-Files11_directory_hierarchy.svg.png
-                                                            alt=inventory class=img-responsive>
-                                                       <div>
-                                                            <h4> &nbsp; Directory Manager <a target="_blank" href=https://github.com/chandan-shrivastava/Directory-Manager
+                                                            <h4> &nbsp; Directory Manager <a target="_blank"
+                                                                      href=https://github.com/chandan-shrivastava/Directory-Manager
                                                                       class="opsrc"><i aria-hidden=true
                                                                            class="fab fa-c"></i>
                                                                  </a></small>
@@ -522,13 +655,21 @@
                                                   <ul class="list-inline social">
                                                        <li><a target="_blank" href=https://facebook.com/fb.chandans><i
                                                                       aria-hidden=true class="fab fa-facebook"></i></a>
+                                                       </li>
+                                                       <li><a target="_blank" href=https://instagram.com/ig_chandans><i
+                                                                      aria-hidden=true class="fab fa-instagram"></i></a>
+                                                       </li>
+                                                       <li><a target="_blank" href=https://twitter.com/tw_chandans><i
+                                                                      aria-hidden=true class="fab fa-twitter"></i></a>
+                                                       </li>
                                                        <li><a target="_blank"
                                                                  href=https://www.linkedin.com/in/chandan-shrivastava><i
                                                                       aria-hidden=true class="fab fa-linkedin"></i></a>
+                                                       </li>
                                                        <li><a target="_blank"
                                                                  href=https://github.com/chandan-shrivastava><i
-                                                                      aria-hidden=true
-                                                                      class="fab fa-github-alt"></i></a>
+                                                                      aria-hidden=true class="fab fa-github"></i></a>
+                                                       </li>
                                                   </ul>
                                         </ul>
                                         <br>
