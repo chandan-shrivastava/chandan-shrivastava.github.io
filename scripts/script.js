@@ -8,9 +8,9 @@ function validate() {
   console.log(o.length);
   var l
   if (o.length <= 0) {
-    return l = "Enter More Than 50 Characters", a.style.background = "#ff3e55", a.innerHTML = l, a.style.marginTop = "15px", !1;
+    return l = "Enter More Than 0 Characters", a.style.background = "#ff3e55", a.innerHTML = l, a.style.marginTop = "15px", !1;
   }
-  return e.length <= 0 ? (l = "Enter a Valid Name", a.style.background = "#ff3e55", a.innerHTML = l, a.style.marginTop = "15px", !1) : n.length <= 0 ? (l = "Enter a Correct Subject", a.style.background = "#ff3e55", a.innerHTML = l, !1) : -1 === t.indexOf("@") || t.length <= 0 ? (l = "Enter a Valid Email", a.style.background = "#ff3e55", a.innerHTML = l, a.style.marginTop = "15px", !1) : o.length <= 0 ? (l = "Enter More Than 100 Characters", a.style.background = "#ff3e55", a.innerHTML = l, a.style.marginTop = "15px", !1) : (l = "Your Email Has Been Sent", a.style.background = "#00b33c", a.innerHTML = l, a.style.marginTop = "15px", !0)
+  return e.length <= 0 ? (l = "Enter a Valid Name", a.style.background = "#ff3e55", a.innerHTML = l, a.style.marginTop = "15px", !1) : n.length <= 0 ? (l = "Enter a Correct Subject", a.style.background = "#ff3e55", a.innerHTML = l, !1) : -1 === t.indexOf("@") || t.length <= 0 ? (l = "Enter a Valid Email", a.style.background = "#ff3e55", a.innerHTML = l, a.style.marginTop = "15px", !1) : o.length <= 0 ? (l = "Enter More Than 0 Characters", a.style.background = "#ff3e55", a.innerHTML = l, a.style.marginTop = "15px", !1) : (l = "Your Email Has Been Sent", a.style.background = "#00b33c", a.innerHTML = l, a.style.marginTop = "15px", !0)
 }
 
 function media1000() {
@@ -22,16 +22,39 @@ $("#fullpage").fullpage({ sectionSelector: ".vertical-scrolling", slideSelector:
 
 const scrollDown = document.getElementById("scrollDown"), scrollUp = document.getElementById("scrollUp")
 window.onload = function () {
-  switch (location.hash) {
-    case "#contact": scrollDown.style.transform = "translateY(180%)"
-      break
-    default: scrollDown.style.transform = "translateY(0%)"
+  console.log(screen.width);
+  if (screen.width > 800) {
+    switch (location.hash) {
+      case "#contact": scrollDown.style.transform = "translateY(180%)"
+        break
+      default: scrollDown.style.transform = "translateY(0%)"
+    }
   }
+  else {
+    if (location.hash == "#home") {
+      scrollDown.style.transform = "translateY(0%)"
+    }
+    else {
+      scrollDown.style.transform = "translateY(180%)"
+    }
+  }
+
 }, window.onhashchange = function () {
-  switch (location.hash) {
-    case "#contact": scrollDown.style.transform = "translateY(180%)"
-      break
-    default: scrollDown.style.transform = "translateY(0%)"
+  console.log(screen.width);
+  if (screen.width > 800) {
+    switch (location.hash) {
+      case "#contact": scrollDown.style.transform = "translateY(180%)"
+        break
+      default: scrollDown.style.transform = "translateY(0%)"
+    }
+  }
+  else {
+    if (location.hash == "#home") {
+      scrollDown.style.transform = "translateY(0%)"
+    }
+    else {
+      scrollDown.style.transform = "translateY(180%)"
+    }
   }
 }, document.getElementById("menu-links").addEventListener("click", closeMenu, !1)
 var x = window.matchMedia("(max-width: 1000px)")
