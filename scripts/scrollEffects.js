@@ -7,6 +7,12 @@ $(document).ready(function(){
         .setClassToggle("#about-headline","fade-in-headline")
         .addTo(e);
     new ScrollMagic
+        .Scene({
+            triggerElement:"#experiencePage",duration:"100%"
+        })
+        .setClassToggle("#experience-headline","fade-in-headline")
+        .addTo(e);
+    new ScrollMagic
         .Scene({triggerElement:"#skillsPage",duration:"100%"})
         .setClassToggle("#skills-headline","fade-in-headline")
         .addTo(e);
@@ -25,6 +31,14 @@ $(document).ready(function(){
     new ScrollMagic
         .Scene({triggerElement:"#aboutPage",duration:"100%"})
         .setClassToggle("#aboutPage .lines .bottom-line","fade-in-bottom")
+        .addTo(e);
+    new ScrollMagic
+        .Scene({triggerElement:"#experiencePage",duration:"100%"})
+        .setClassToggle("#experiencePage .lines .top-line","fade-in-top")
+        .addTo(e);
+    new ScrollMagic
+        .Scene({triggerElement:"#experiencePage",duration:"100%"})
+        .setClassToggle("#experiencePage .lines .bottom-line","fade-in-bottom")
         .addTo(e);
     new ScrollMagic
         .Scene({triggerElement:"#skillsPage",duration:"100%"})
@@ -55,6 +69,10 @@ $(document).ready(function(){
         .setClassToggle("#aboutPage .about-info","fade-in-info")
         .addTo(e);
     new ScrollMagic
+        .Scene({triggerElement:"#experiencePage",duration:"100%"})
+        .setClassToggle("#experiencePage .experience-info","fade-in-info")
+        .addTo(e);
+    new ScrollMagic
         .Scene({triggerElement:"#skillsPage",duration:"100%"})
         .setClassToggle("#skillsPage .skills-info","fade-in-info")
         .addTo(e);
@@ -75,8 +93,20 @@ $(document).ready(function(){
         .setClassToggle("#aboutPage .about-links>span","fade-in-link")
         .addTo(e);
     new ScrollMagic
+        .Scene({triggerElement:"#experiencePage",duration:"100%"})
+        .setClassToggle("#experiencePage .experience-links>span","fade-in-link")
+        .addTo(e);
+    new ScrollMagic
+        .Scene({triggerElement:"#experiencePage",duration:"100%"})
+        .setClassToggle("#experiencePage .experience-links>span","fade-in-link")
+        .addTo(e);
+    new ScrollMagic
         .Scene({triggerElement:"#aboutPage",duration:"100%"})
         .setClassToggle("#aboutPage .about-btns","fade-in-btn")
+        .addTo(e);
+    new ScrollMagic
+        .Scene({triggerElement:"#experiencePage",duration:"100%"})
+        .setClassToggle("#experiencePage .experience-btns","fade-in-btn")
         .addTo(e);
     new ScrollMagic
         .Scene({triggerElement:"#projectsPage",duration:"100%"})
@@ -89,6 +119,14 @@ $(document).ready(function(){
     new ScrollMagic
         .Scene({triggerElement:"#aboutPage",duration:"100%"})
         .setClassToggle("#aboutPage .about-tabs","fade-in-tabs")
+        .addTo(e);
+    new ScrollMagic
+        .Scene({triggerElement:"#experiencePage",duration:"100%"})
+        .setClassToggle("#experiencePage .experience-image","fade-in-image")
+        .addTo(e);
+    new ScrollMagic
+        .Scene({triggerElement:"#experiencePage",duration:"100%"})
+        .setClassToggle("#experiencePage .experience-tabs","fade-in-tabs")
         .addTo(e);
     new ScrollMagic
         .Scene({triggerElement:"#skillsPage",duration:"100%"})
