@@ -1,2 +1,2 @@
-# [chandan-shrivastava.github.io](chandan-shrivastava.github.io)
+# [chandan-shrivastava.github.io](http://chandan-shrivastava.github.io)
 Personal Portfolio
